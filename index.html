@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator">
+
+    <!-- Display Screen -->
+    <div class="display-container">
+      <input type="text" id="display" readonly />
+    </div>
+
+    <!-- Mode Row -->
+    <div class="mode-row">
+      <button id="angleToggle">RAD</button>
+      <button id="themeToggle">🌙</button>
+      <button onclick="mode()">INV</button>
+    </div>
+
+    <!-- Buttons Section -->
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="backspace()">⌫</button>
+      <button onclick="append('(')">(</button>
+      <button onclick="append(')')">)</button>
+
+      <button id="sinBtn">sin</button>
+      <button id="cosBtn">cos</button>
+      <button id="tanBtn">tan</button>
+      <button onclick="append('^')">xⁿ</button>
+
+      <button onclick="append('log(')">log</button>
+      <button onclick="append('ln(')">ln</button>
+      <button onclick="append('√(')">√</button>
+      <button onclick="append('π')">π</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="append('/')">÷</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="append('*')">×</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="append('-')">−</button>
+
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="append('e')">e</button>
+      <button onclick="append('+')">+</button>
+      
+
+      
+
+      
+    </div>
+    <div class="new2">
+      <button class="equal" onclick="calculate()">=</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
